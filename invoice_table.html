@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Invoice Table Exercise</title>
+</head>
+<h1 style="text-align: center; font-size: xxx-large; display: none;">Invoice Table Exercise</h1>
+<style>
+    th, td {border: 1px solid blue;
+    text-align: center;
+border-radius: 4px;}
+    th {background-color: rgb(255, 0, 149);}
+    .total {font-weight: 900;
+    color: blueviolet;}
+    .totheright {text-align: right;}
+    /*td:hover {background-color: fuchsia;}*/
+    /*.legend {font-weight: bolder;}*/
+
+</style>
+<body>
+    <div>
+        <fieldset class="fieldset" style="text-align: center; border: 3px solid fuchsia;">
+            <legend class="legend" style="font-size: xx-large;font-weight: bolder">Invoice Table Exercise</legend>
+        <table style="width:100%;">
+            <thead>
+                <tr>
+                    <th>Item Description</th>
+                    <th>Qty</th>
+                    <th>Unit Price ($)</th>
+                    <th>Amount</th>
+                </tr>
+            </thead>
+                <tr>
+                    <td style="font-weight: 900;">Bond Paper</td>
+                    <td class="totheright"><input type="text" style="border:none;"></td>
+                    <td class="totheright">$4</td>
+                    <td class="totheright">$8</td>
+                </tr>
+                <tr>
+                    <td style="font-weight: 900;">Pen</td>
+                    <td class="totheright">100</td>
+                    <td class="totheright">$1</td>
+                    <td class="totheright">$100</td>
+                </tr>
+                <tr>
+                    <td style="font-weight: 900;">Calculator</td>
+                    <td class="totheright">2 Quantum Calculators</td>
+                    <td class="totheright">$50</td>
+                    <td class="totheright">$100</td>
+                </tr>
+                <tr>
+                    <td class="total" colspan="3" style="text-align: right;">Sub Total</td>
+                    <td class="totheright">$208</td>
+                </tr>
+                <tr>
+                    <td class="total" colspan="3" style="text-align: right;">VAT (1%)</td>
+                    <td class="totheright">$2.08</td>
+                </tr>
+                <tr>
+                    <td class="total" colspan="3" style="text-align: right;">Total</td>
+                    <td class="totheright">$210.08</td>
+                </tr>
+        </table>
+        </fieldset>
+    </div>
+</body>
+</html>

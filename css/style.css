@@ -222,13 +222,15 @@ footer {
     grid-column: 3/5;
 }
 
+.basic-grid2 .item8 {
+    grid-column: 3/5;
+}
+
+
 .basic-grid2 .item10 {
     grid-row: 3/5;
 }
 
-.basic-grid2 .item8 {
-    grid-column: 3/5;
-}
 
 .advance-grid2 .item5 {
     background-color: beige;

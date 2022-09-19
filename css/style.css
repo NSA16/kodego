@@ -1,4 +1,3 @@
-.basic-grid, .advance-grid {
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -157,16 +156,9 @@ footer {
     text-align: center;
 }
 
-.fa-facebook {
-    background: #3B5998;
-    color: white;
-    width: 30px;
-    height: 20px;
-    padding-top: 4px;
-  }
 
 
-.basic-grid {
+.basic-grid, .advance-grid{
     display: grid;
     grid-template-columns: auto auto auto;
     background-color: blue;
@@ -196,16 +188,59 @@ footer {
     grid-column: 3/4;
 }
 
-<<<<<<< HEAD
 .advance-grid .item7 {
     grid-area: 1/ 2/ 3/ 5;
 }
-||||||| 0f6275f
-.item5 {
-    grid-row: 2/4;
+
+/* Grid Exercise CSS*/
+
+.basic-grid2, .advance-grid2{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    background-color: blue;
+    gap: 10px;
+    padding: 10px;
 }
-=======
-.item5 {
-    grid-row: 2/4;
+
+.advance-grid2 {
+    grid-template-columns: auto auto auto auto auto auto;
 }
->>>>>>> main
+
+.basic-grid2>div, .advance-grid2>div {
+    border: 1px solid black;
+    text-align: center;
+    line-height: 52px;
+    background-color: aqua;
+    padding: 15px;
+}
+
+.basic-grid2 .item1 {
+    grid-row: 1/3;
+}
+
+.basic-grid2 .item3 {
+    grid-column: 3/5;
+}
+
+.basic-grid2 .item10 {
+    grid-row: 3/5;
+}
+
+.basic-grid2 .item8 {
+    grid-column: 3/5;
+}
+
+.advance-grid2 .item5 {
+    background-color: beige;
+    grid-area: 1/5/2/7;
+}
+
+.advance-grid2 .item8 {
+    background-color: rgb(87, 39, 126);
+    grid-area: 2/2/5/4;
+}
+
+.advance-grid2 .item9 {
+    background-color: rgb(54, 39, 139);
+    grid-area: 2/4/5/6;
+}

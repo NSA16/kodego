@@ -1,0 +1,27 @@
+.basic-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: blue;
+    gap: 5px;
+    padding: 5px;
+}
+.basic-grid>div {
+    border: 1px solid black;
+    text-align: center;
+    line-height: 52px;
+    background-color: aqua;
+    padding: 15px;
+}
+
+.item1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.item3 {
+    grid-column: 2/4;
+}
+
+.item5 {
+    grid-row: 2/4;
+}

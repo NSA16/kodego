@@ -281,9 +281,7 @@ nav a {
         background-image:none;
     }
 }
-    
-
-
+ 
 @media screen and (max-width: 992px) {
     .navbar {
         background-color: violet;

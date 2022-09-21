@@ -276,7 +276,7 @@ nav a {
     background-color: forestgreen;
 }
 
-@media  and (max-width: 425px) {
+@media screen and (max-width: 425px) {
     .banner {
         background-image:none;
     }

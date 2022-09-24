@@ -4,28 +4,46 @@
     <title>Nino Sun</title>
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
     <script src="js/bootstrap.min.js" type="javascript"></script>
+    <meta name=”viewport” content=”width=device-width, initial-scale=1.0">
+
 </head>
     <style>
         .banner .container {
             background-image: url("images/Baby\ Aya.jpg");
         }
 
-        .d-flex   {
-            display: flex;
-            flex-wrap: wrap;
-            text-align: center;
-            padding-left: 12px;
-            justify-content: space-evenly;
-
+        .my-portfolio .card-body {
+            width: 200px;
         }
-
-        .card-body {
-            width: 250px;
-        }
-
-        .h100 {
+        
+        
+       .my-portfolio .col {
             margin-bottom: 20px;
-        }
+       }
+       
+
+       .my-portfolio .card {
+        box-shadow: 10px 10px #888888;
+        text-align: justify;
+       }
+
+       .card-title {
+            margin-bottom: 30px;
+       }
+
+       .work-education>.container>.row>.col.text-end {
+            border-right: 4px solid green;
+       }
+
+       .work-education>.container>.row>.col.order-last {
+            border-left: 4px solid green;
+       }
+     
+       @media screen and (max-width: 992px) {
+
+        
+       }
+
     </style>
 <body>
     <div class="page-wrapper">
@@ -63,81 +81,139 @@
         </section>
         <section class="my-portfolio p-5">
             <div class="container">
-                <h3 class="headproject">Pair Coding Activity</h3>
-                <div class="text-center">
-                    <div class="row row-cols-sm-1 row-cols-md-2">
-                    <div class="col">
-                    <div class="card h100">
-                        <div class="card-header" style="display: none;">Water</div>
-                        <div class="card-body">
-                            <div>
-                            <h4 class="card-title">Water</h4>
+                <h3 class="text-center">Pair Coding Activity</h3>
+                    <div class="row row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 row-cols-xxl-6" style="justify-content: space-evenly;">
+                        <div class="col">
+                            <div class="card h-100">
+                                <div class="card-header" style="display: none;">Water</div>
+                                <div class="card-body">
+                                    <div>
+                                    <h4 class="card-title">Water</h4>
+                                    </div>
+                                    <p>Water. Earth. Fire. Air. Long ago, the four nations lived together in harmony. 
+                                        Then everything changed when the Fire Nation attacked. </p>
+                                </div>
                             </div>
-                            <p>Water. Earth. Fire. Air. Long ago, the four nations lived together in harmony. 
-                                Then everything changed when the Fire Nation attacked. </p>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <div class="card-header" style="display: none;">Earth</div>
+                                    <div class="card-body">
+                                        <div>
+                                        <h4 class="card-title">Earth</h4>
+                                        </div>
+                                        <p>Water. Earth. Fire. Air. Long ago, the four nations lived together in harmony. 
+                                            Then everything changed when the Fire Nation attacked. </p>
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <div class="card-header" style="display: none;">Fire</div>
+                                <div class="card-body">
+                                    <div>
+                                    <h4 class="card-title">Fire</h4>
+                                    </div>
+                                    <p>Water. Earth. Fire. Air. Long ago, the four nations lived together in harmony. 
+                                        Then everything changed when the Fire Nation attacked. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <div class="card-header" style="display: none;">Air</div>
+                                <div class="card-body">
+                                    <div>
+                                    <h4 class="card-title">Air</h4>
+                                    </div>
+                                    <p>Water. Earth. Fire. Air. Long ago, the four nations lived together in harmony. 
+                                        Then everything changed when the Fire Nation attacked. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <div class="card-header" style="display: none;">Avatar</div>
+                                <div class="card-body">
+                                    <div>
+                                    <h4 class="card-title">Avatar</h4>
+                                    </div>
+                                    <p>Water. Earth. Fire. Air. Long ago, the four nations lived together in harmony.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <div class="card-header" style="display: none;">Firelord</div>
+                                <div class="card-body">
+                                    <div>
+                                    <h4 class="card-title">Firelord</h4>
+                                    </div>
+                                    <p>Water. Earth. Fire. Air. Long ago, the four nations lived together in harmony. 
+                                        Then everything changed when the Fire Nation attacked. </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="card text-center h100">
-                        <div class="card-header" style="display: none;">Earth</div>
-                        <div class="card-body">
-                            <div>
-                            <h4 class="card-title">Earth</h4>
-                            </div>
-                            <p>Water. Earth. Fire. Air. Long ago, the four nations lived together in harmony. 
-                                Then everything changed when the Fire Nation attacked. </p>
-                        </div>
-                    </div>
-                    <div class="card text-center h100">
-                        <div class="card-header" style="display: none;">Fire</div>
-                        <div class="card-body">
-                            <div>
-                            <h4 class="card-title">Fire</h4>
-                            </div>
-                            <p>Water. Earth. Fire. Air. Long ago, the four nations lived together in harmony. 
-                                Then everything changed when the Fire Nation attacked. </p>
-                        </div>
-                    </div>
-                    <div class="card text-center h100">
-                        <div class="card-header" style="display: none;">Air</div>
-                        <div class="card-body">
-                            <div>
-                            <h4 class="card-title">Air</h4>
-                            </div>
-                            <p>Water. Earth. Fire. Air. Long ago, the four nations lived together in harmony. 
-                                Then everything changed when the Fire Nation attacked. </p>
-                        </div>
-                    </div>
-                    <div class="card text-center h100">
-                        <div class="card-header" style="display: none;">Avatar</div>
-                        <div class="card-body">
-                            <div>
-                            <h4 class="card-title">Avatar</h4>
-                            </div>
-                            <p>Water. Earth. Fire. Air. Long ago, the four nations lived together in harmony.</p>
-                        </div>
-                    </div>
-                    <div class="card text-center h100">
-                        <div class="card-header" style="display: none;">Firelord</div>
-                        <div class="card-body">
-                            <div>
-                            <h4 class="card-title">Firelord</h4>
-                            </div>
-                            <p>Water. Earth. Fire. Air. Long ago, the four nations lived together in harmony. 
-                                Then everything changed when the Fire Nation attacked. </p>
-                        </div>
-                    </div>
-                    </div>
-                    </div>
-                </div>
             </div>
         </section>
         <section class="work-education">
-            <div class="container">
-                <ul class="first-list">
-                    <li>University of Southeastern Philippines</li>
-                    <li>Tagum City National High School</li>
-                    <li>Don Ricardo Briz Central Elementary School</li>
-                </ul>
+            <div class="container pt-5 pb-5">
+                <h3 class="text-center mb-5">Work Experience</h3>
+                    <div class="row">
+                        <div class="col text-end">
+                            <h4>KodeGo Bootcamp</h4>
+                            <div>Full Stack Web Dev Bootcamp Part-Time</div>
+                            <div>September 2022 - Present</div>
+                        </div>
+                            <div class="col"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col order-last">
+                            <h4>Key Group LLC</h4>
+                            <div>Marketing VA</div>
+                            <div>September 2022 - Present</div>
+                        </div>
+                            <div class="col"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-end">
+                            <h4>Reibar Marketing</h4>
+                            <div>SEO Analyst / Data Manager</div>
+                            <div>June 2019 - August 2022</div>
+                        </div>
+                            <div class="col"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col order-last">
+                            <h4>Key Group LLC</h4>
+                            <div>Marketing VA</div>
+                            <div>September 2022 - Present</div>
+                        </div>
+                            <div class="col"></div>
+                    </div>
+                <h3 class="text-center">Education</h3>
+                    <div class="row">
+                        <div class="col text-end">
+                            <h4>University of Southeastern Philippines</h4>
+                            <div>Undergrad</div>
+                        </div>
+                            <div class="col"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col order-last">
+                            <h4>Tagum National High School</h4>
+                            <div>1999 - 2003</div>
+                        </div>
+                            <div class="col"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-end">
+                            <h4>Don Ricardo Briz Central Elementary School</h4>
+                            <div>1993-1999</div>
+                        </div>
+                            <div class="col"></div>
+                    </div>
             </div>
         </section>       
         <footer>
@@ -151,6 +227,35 @@
             </div>
         </footer>
     </div>
+    <form class="mx-5 border">
+        <div class="row">
+            <div class="my-5 col">
+                <label class="form-label">First Name</label>
+                <input class="form-control" type="text" name="first_name">
+            </div>
+            <div class="my-5 col">
+                <label class="form-label">Last Name</label>
+                <input class="form-control" type="text" name="last_name">
+            </div>
+            <div class="row">
+                <div class="col my-3">
+                    <label class="form-label">Email Address</label>
+                    <input class="form-control" type="text" name="email_address">
+                </div>
+                <div class="col my-3">
+                    <label class="form-label">Contact #:</label>
+                    <input class="form-control" type="text" name="contact_number">
+                </div>
+            </div>
+            <div class="row mb-5 ps-4">
+                <div class="col"></div>
+                <textarea name="textarea" id="address" cols="21" rows="1" placeholder="Complete Address"></textarea>
+            </div>
+            <div>
+                <h2>placeholder</h2>
+            </div>
+        </div>
+    </form>
     
 </body>
 

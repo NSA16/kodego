@@ -9,7 +9,7 @@
     <body class="mx-5 bg-secondary bg-gradient">
     <h1 style="text-align: center; font-size: xxx-large; display: none;">Invoice Table Exercise</h1>
         <div>
-        <form action="https://www.google.com" target="_blank" method="get">
+        <form class="mb-5" action="https://www.google.com" target="_blank" method="get">
             <fieldset class="text-center">
                 <legend>Invoice Details</legend>
                 <div class="text-center">
@@ -35,19 +35,19 @@
                         <th class="text-center">Amount</th>
                     </tr>
                     <tr>
-                        <td><textarea class="w-100" name="item1" id="item1" cols="50" rows="2" maxlength="100"></textarea></td>
+                        <td><textarea class="w-100 rounded-3" name="item1" id="item1" cols="50" rows="2" maxlength="100"></textarea></td>
                         <td><input class="form-control text-end" type="number" id="qty1" name="qty1"></td>
                         <td><input class="form-control text-end" type="number" id="unitprice1" name="unitprice1"></td>
                         <td><input class="form-control text-end" type="number" id="amount1" name="amount1"></td>
                     </tr>
                     <tr>
-                        <td><textarea class="w-100" name="item2" id="item2" cols="50" rows="2" maxlength="100"></textarea></td>
+                        <td><textarea class="w-100 rounded-3" name="item2" id="item2" cols="50" rows="2" maxlength="100"></textarea></td>
                         <td><input class="form-control text-end" type="number" id="qty2" name="qty2" ></td>
                         <td><input class="form-control text-end" type="number" id="unitprice2" name="unitprice2"></td>
                         <td><input class="form-control text-end" type="number" id="amount2" name="amount2"></td>
                     </tr>
                     <tr>
-                        <td><textarea class="w-100" name="item2" id="item2" cols="50" rows="2" maxlength="100"></textarea></td>
+                        <td><textarea class="w-100 rounded-3" name="item2" id="item2" cols="50" rows="2" maxlength="100"></textarea></td>
                         <td><input class="form-control text-end" type="number" id="qty3" name="qty3"></td>
                         <td><input class="form-control text-end" type="number" id="unitprice3" name="unitprice3"></td>
                         <td><input class="form-control text-end" type="number" id="amount3" name="amount3"></td>
@@ -83,11 +83,11 @@
                     <input class="form-check-input" type="radio" id="office" name="deliver" checked>
                 </div>
                 <div>
-                    <textarea name="textarea" id="address" maxlength="500" rows="5" cols="30" placeholder="Where should we deliver the items?"></textarea>
+                    <textarea class="rounded-3" name="textarea" id="address" maxlength="500" rows="5" cols="30" placeholder="Where should we deliver the items?"></textarea>
                 </div>
             </fieldset>
             <div class="text-center">
-                <input class="btn btn-success" type="submit" name="submit" value="Submit Order">
+                <input class="btn btn-success rounded-3 mb-5" type="submit" name="submit" value="Submit Order">
             </div>
         </form>
         </div>

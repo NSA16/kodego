@@ -44,20 +44,20 @@
 
     <div>
         <div>
-            <input type="number" placeholder="Letters Only" id="letter" value="" maxlength="1" onkeyup="consonantVowel()"/>
-        </div>
-        <div style="display:flex;">
-            <p class="btn me-2">+</p>
-            <p class="btn  me-2">-</p>
-            <p class="btn  me-2">*</p>
-            <p class="btn  me-2">/</p>
+            <input type="number" placeholder="Numbers Only" id="numba1" value=""/>
         </div>
         <div>
-            <input type="number" placeholder="Letters Only" id="letter" value="" maxlength="1" onkeyup="consonantVowel()"/>
+            <button id="addMo" class="bg-success m-2" onclick="kalkyu('+')">+</button>
+            <button id="kuhaMo" class="bg-success m-2" onclick="kalkyu('-')">-</button>
+            <button id="timesMo" class="bg-success m-2" onclick="kalkyu('*')">*</button>
+            <button id="dibyMo" class="bg-success m-2" onclick="kalkyu('/')">/</button>
+            <button id="walayKlaro" class="bg-success m-2" onclick="kalkyu('=')">=</button>
         </div>
-        <div id="singleresult"></div>
+        <div>
+            <input type="number" placeholder="Numbers Only" id="numba2" value=""/>
+        </div>  
+        <div id="resulta"></div>
     </div>
-
       
     <script>
         function consonantVowel() {
@@ -72,13 +72,33 @@
                     break;
                 default:
                     document.getElementById("singleresult").innerHTML = (document.getElementById("letter").value) + " is a " + "Consonant" ;
-                    breal;
+                    break;
             }
         }
-    </script>
-
+    </script> 
     <script>
-
+         function kalkyu(sampyon) {
+                x = document.getElementsByClassName('kalkyu').value;
+            let a= parseInt(document.getElementById("numba1").value);
+                b= parseInt(document.getElementById("numba2").value);
+            switch (sampyon) {
+                case "+":
+                    document.getElementById("resulta").innerHTML = a + b;
+                    break;
+                case "-":
+                    document.getElementById("resulta").innerHTML = a - b;
+                    break;
+                case "*":
+                    document.getElementById("resulta").innerHTML = a * b;
+                    break;
+                case "/":
+                    document.getElementById("resulta").innerHTML = a / b;
+                    break;
+                default:
+                    document.getElementById("resulta").innerHTML = 'hindo ko alam';
+                    break;
+            }
+        }
     </script>
 </body>
 </html>

@@ -31,13 +31,58 @@
         <div class="ms-5 h2 text-primary" id="triple"></div>
     </div>
 
+    <div>
+        <h2 class="mt-5">Lowest Number</h2>
+        <div class="ms-5 h2 text-primary" id="lowest"></div>
+    </div>
+
+    <div>
+        <h2 class="mt-5">Highest Number</h2>
+        <div class="ms-5 h2 text-primary" id="highest"></div>
+    </div>
+
+    <div>
+        <h2 class="mt-5">Other Sol Lowest Number</h2>
+        <div class="ms-5 h2 text-primary" id="lowestOtherSol"></div>
+    </div>
+
 <script>
-    let numbers = [1, 1, 2, 2, 2, 3, 3, 4, 5, 5, 5, 6, 6, 7, 7, 7, 8, 9, 9, 9];
+//    let numbers = [1, 1, 2, 2, 2, 3, 3, 4, 5, 5, 5, 6, 6, 7, 7, 7, 8, 9, 9, 9];
     
-  function countConsecutiveValue(list, consecutive=2) {
+ // function countConsecutiveValue(list, consecutive=2) {
     
-  }
-    
+ // }
+
+ // let setOfNumber = [23,34,56,34,5,8,11,43];
+
+  const numberArr = [23,34,56,34,5,8,11,43];
+
+  const highest = Math.max(...numberArr);
+
+  console.log("Highest Number is: " + highest);
+
+  document.getElementById("highest").innerHTML = highest;
+
+  const lowest = Math.min(...numberArr);
+
+  console.log("Lowest Number is: " + lowest);
+
+  document.getElementById("lowest").innerHTML = lowest;
+
+
+  let min = Number.POSITIVE_INFINITY
+
+  for (const value of numberArr) {
+  min = Math.min(min, value)
+}
+
+document.getElementById("lowestOtherSol").innerHTML = min;
+
+
+
+
+
+
 
 </script> 
 </body>

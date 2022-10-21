@@ -33,6 +33,11 @@
         <div class="ms-5 mt-5 h2 text-primary" id="practice2"></div>
     </div>
 
+    <div>
+        <h2>Practice 3</h2>
+        <div class="ms-5 h2 text-success" style="margin-bottom: 400px;" id="practice"></div>
+    </div>
+
 <script>
 
 
@@ -56,6 +61,58 @@ let cars = ['ford','toyota','mitsubishi'];
 for (i=0; i<cars.length;i++){
     document.getElementById('practice1').innerHTML += (cars[i]) + "<br>";
 }
+
+/*
+let paragraph = "Create a function that accepts a NUMBER and output the next number in sequence that is divisible by 7.";
+
+console.log(paragraph.replace(/number/g,"#"));
+
+document.getElementById('practice').innerHTML = paragraph.replace(/number/gi,'numero') + "<br>";
+document.getElementById('practice').innerHTML += "A".concat("B",'normal') + "<br>";
+document.getElementById('practice').innerHTML += "".concat("AB",'normal') + "<br>";
+document.getElementById('practice').innerHTML += paragraph.toUpperCase() + "<br>";
+
+let trimSample = " Daghan    Spaces   "
+let padSample = "padreDamaso"
+
+document.getElementById('practice').innerHTML += trimSample.trim() + "<br>";
+document.getElementById('practice').innerHTML += trimSample + "<br>";
+console.log(trimSample);
+console.log(trimSample.trim());
+document.getElementById('practice').innerHTML += padSample.padStart(15,"p") + "<br>";
+
+cars.push('Isuzu','Nissan')
+
+let paddedSample = padSample.padStart(13,"*");
+document.getElementById('practice').innerHTML += paddedSample + "<br>";
+document.getElementById('practice').innerHTML += paragraph.split(" ", 5 ) + "<br>";
+document.getElementById('practice').innerHTML += padSample.charAt(5) + "<br>";
+document.getElementById('practice').innerHTML += padSample.charCodeAt(5) + "<br>";
+document.getElementById('practice').innerHTML += padSample.indexOf('e') + "<br>";
+document.getElementById('practice').innerHTML += cars + "<br>";
+document.getElementById('practice').innerHTML += cars.toString() + "<br>";
+document.getElementById('practice').innerHTML += cars.join(' x ') + "<br>";
+document.getElementById('practice').innerHTML += cars.pop() + "<br>";
+document.getElementById('practice').innerHTML += cars + "<br>";*/
+//cars.splice(1,1, 'isuzu');
+//document.getElementById('practice').innerHTML += sakyanan.splice(0,2) + "<br>";
+//document.getElementById('practice').innerHTML += cars + "<br>";
+let suv = ['ford','toyota','mitsubishi','nissan','isuzu'];
+//let sakyanan = suv.slice(2,4);
+//document.getElementById('practice').innerHTML += sakyanan + "<br>";
+
+let midsize = suv.splice(2,2);
+
+document.getElementById('practice').innerHTML += midsize + "<br>";
+document.getElementById('practice').innerHTML += suv + "<br>";
+
+
+
+
+
+
+
+
 
 </script> 
 </body>

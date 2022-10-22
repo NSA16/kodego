@@ -61,15 +61,24 @@ class Furniture {
 
         class BedSideTable extends Table {
             constructor(){
-                super('withDrawer','Square')
+                super('With Drawers','Square')
             }
 
         }
 
 
 
-let furni = new BedSideTable;
-document.getElementById('output').innerHTML = furni.make;
+let furni = BedSideTable.shape;
+
+
+if (furni="Square") {
+    document.getElementById('output').innerHTML = furni.shape + " Table";
+}
+else {
+    document.getElementById('output').innerHTML = "Table " + furni.design;
+}
+
+
 
 
 </script> 
